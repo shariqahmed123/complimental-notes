@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    background: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.personContainer .box{
+    height: 60vh;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 50vh;
+    border: 2px solid green;
+    border-radius: 4px;
+    box-shadow: 0px 10px 35px 1px rgba(0, 128, 0, 0.37);
+    /* animation: 2s infinite bor; */
+}
+/* @keyframes bor{
+0%{
+    border-top: 2px solid red;
+    box-shadow: 0px 15px 35px darkgreen;
+}
+25%{
+    border-right: 2px solid red;
+    box-shadow: 0px 15px 35px darkgreen;
+}
+50%{
+    border-bottom: 2px solid red;
+    box-shadow: 0px 15px 35px darkgreen;
+}
+75%{
+    border-left: 2px solid red;
+    box-shadow: 0px 15px 35px darkgreen;
+}
+100%{
+    border-top: 2px solid red;
+    box-shadow: 0px 15px 35px darkgreen;
+}
+
+} */
+
+
+.content{
+    padding: 20px 40px;
+}
+.content h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top:40px;
+}
+.content input{
+    display: block;
+    margin: 5% 0 5% 25%;
+    padding: 10px 20px; 
+    width: 250px;
+    border: none;
+    background: none;
+    border-bottom: 1.5px solid green;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    animation: 1s inp;
+}
+@keyframes inp{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 250px;
+    }
+}
+
+
+::-webkit-input-placeholder{
+    color:green;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content button{
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 30px  ;
+    margin-top:20px;
+    background:none;
+    border: 1px solid green;
+    outline: none;
+    color: green;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    transition:.8s;
+    text-transform: capitalize;
+    /* animation: 1s btn */
+}
+/* @keyframes btn{
+    0%{
+        
+        padding: 0;
+    }
+    100%{
+        
+        padding: 10px 30px  ;
+    }
+} */
+.content button:hover{
+    background: green;
+    color: greenyellow;
+}
+
+.content  span{
+    text-transform: uppercase;
+}
+
+.content p{
+    font-weight: 700;
+    margin:20px 0;
+    
+}
+.imgGif{
+    text-align: center;
+}
